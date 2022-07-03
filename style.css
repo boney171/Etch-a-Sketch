@@ -51,13 +51,41 @@ button:hover {
     transform: scale(1.1);
 }
 
+button:active {
+    background: #b1b190;
+    transform: scale(1.2);
+}
+
 .draw {
     background-color: white;
     width: 350px;
     height: 350px;
-    box-shadow: 1px 3px 8px rgb(0, 0, 0);
+    box-shadow: 1px 3px 8px rgb(14, 13, 13);
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+
+.grid {
+    border: 1px solid rgb(167, 166, 166);
+}
+
+.grid:hover {
+    background: #949492;
+    transform: scale(1.0);
+}
+
+.grid:active {
+    background-color: black;
 }
 
 .color {
     align-self: center;
 }
+
+#footer {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
